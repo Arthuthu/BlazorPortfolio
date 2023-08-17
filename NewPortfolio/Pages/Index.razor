@@ -3,6 +3,11 @@
 
 <PageTitle>Arthur Portfolio</PageTitle>
 
+
+<div>
+	<img src="@linkLinkedinPicture" alt="linkedin-picture" />
+</div>
+
 <div class="info-description">
 	<div class="info-paragraph">
 		Olá, meu nome é @info.Name. Com @info.Age anos,
@@ -158,7 +163,7 @@
 	<div>
 		<div class="contato-info-div">
 			<div>
-				<img class="contact-icon" src="@linkIconeWhatsapp" />
+				<img class="contact-icon" alt="whatsapp-icon" src="@linkIconeWhatsapp" />
 			</div>
 			<div class="d-flex justify-content-evenly">
 				<div class="contact-section-title">
@@ -171,7 +176,7 @@
 		</div>
 		<div class="contato-info-div">
 			<div>
-				<img class="contact-icon" src="@linkIconeGithub" />
+				<img class="contact-icon" alt="github-icon" src="@linkIconeGithub" />
 			</div>
 			<a href="@info.GithubLink" class="link">
 				Github
@@ -181,7 +186,7 @@
 	<div>
 		<div class="contato-info-div">
 			<div>
-				<img class="contact-icon" src="@linkIconeEmail" />
+				<img class="contact-icon" alt="email-icon" src="@linkIconeEmail" />
 			</div>
 			<div class="d-flex justify-content-evenly">
 				<div class="contact-section-title">
@@ -194,7 +199,7 @@
 		</div>
 		<div class="contato-info-div">
 			<div>
-				<img class="contact-icon" src="@linkIconeLinkedin" />
+				<img class="contact-icon" alt="linkedin-icon" src="@linkIconeLinkedin" />
 			</div>
 			<a href="@info.LinkedinLink" class="link">
 				Linkedin
@@ -206,6 +211,8 @@
 @code 
 {
 	Info info = new Info();
+
+	private const string linkLinkedinPicture = "https://media.licdn.com/dms/image/D4D03AQFBfvqc9GSVpg/profile-displayphoto-shrink_800_800/0/1665262332486?e=1697673600&v=beta&t=rhQ3i0gYxoewWG7NSEIu2ofdAhF_MmYndpA3taUl5bg";
 
 	private const string linkIconeCSharp = "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png";
 	private const string linkIconeSql = "https://cdn-icons-png.flaticon.com/512/4299/4299956.png";
