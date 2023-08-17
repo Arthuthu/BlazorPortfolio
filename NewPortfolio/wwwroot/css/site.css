@@ -72,3 +72,13 @@ html, body {
     padding: 0;
     margin: 0;
 }
+
+.competencias-list-div {
+    margin-bottom: 20px;
+}
+
+.projects-div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0 40px 0;
+}
