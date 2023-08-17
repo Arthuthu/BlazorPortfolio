@@ -165,7 +165,7 @@ html, body {
     align-items: center;
 }
 
-.arrow-button {
+.slide-button {
     height: 100px;
     width: 150px;
     margin: 40px 0;
@@ -177,7 +177,7 @@ html, body {
     font-size: 20px;
 }
 
-    .arrow-button:hover {
+    .slide-button:hover {
         transition: 500ms;
         color: #8F01B9;
         background-color: #FFF;
