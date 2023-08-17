@@ -82,3 +82,44 @@ html, body {
     justify-content: space-evenly;
     margin: 20px 0 40px 0;
 }
+
+#contact-section {
+    border-top: 5px solid #8F01B9;
+    border-radius: 5px;
+}
+
+.contato-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contato-info-div {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.contact-icon {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+}
+
+.link {
+    font-weight: bold;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .link:hover {
+        transition: 500ms;
+        color: #D100B5;
+    }
+
+.contact-section-title {
+    font-weight: bold;
+    margin-right: 5px;
+}
