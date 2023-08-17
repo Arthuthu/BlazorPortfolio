@@ -95,6 +95,11 @@ html, body {
     margin: 20px 0 40px 0;
 }
 
+.index-project-picture {
+    height: 331px;
+    width: 672px;
+}
+
 #contact-section {
     border-top: 5px solid #8F01B9;
     border-radius: 5px;

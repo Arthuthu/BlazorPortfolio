@@ -10,4 +10,9 @@
     <Folder Include="Icones\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\Images\Roadmaps\Index.png" />
+    <None Include="wwwroot\Images\Roadmaps\Login.png" />
+  </ItemGroup>
+
 </Project>
