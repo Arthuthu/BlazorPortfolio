@@ -162,10 +162,23 @@ html, body {
 .project-roller-buttons-div {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .arrow-button {
     height: 100px;
-    width: 100px;
+    width: 150px;
     margin: 40px 0;
+    color: white;
+    background-color: transparent;
+    border: 6px solid #8F01B9;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
 }
+
+    .arrow-button:hover {
+        transition: 500ms;
+        color: #8F01B9;
+        background-color: #FFF;
+    }
