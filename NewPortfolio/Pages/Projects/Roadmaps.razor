@@ -1,6 +1,40 @@
 ﻿@page "/projects/roadmaps"
 
-<h4>This is the roadmaps project page</h4>
+@page "/projects/roadmaps"
+
+<div class="section-title">
+	Roadmaps
+</div>
+
+<div class="info-description">
+	<div class="info-paragraph">
+		Roadmaps é um site desenvolvidor em Blazor que utiliza uma API que traz informações do banco de dados.
+	</div>
+	<div class="info-paragraph">
+		O back-end foi desenvolvido em C#, utilizando uma REST Api, 2 bibliotecas que realizam a regra de
+		negócio e fazendo a busca das informações com o ORM Dapper.
+	</div>
+	<div class="info-paragraph">
+		O banco de dados utilizado é o SQL Server, onde foi criado as tabelas e stored procedures
+		para executar os commands e querys no banco.
+	</div>
+	<div class="info-paragraph">
+		Também foi utilizado bibliotecas como FluentValidation para garantir que os dados contenham
+		informações válidas, Logging para guardar informações caso ocorra erros inesperados com o código.
+	</div>
+	<div class="info-paragraph">
+		Foi desenvolvido também um projeto de testes que utiliza a biblioteca XUnit junto com FluentAssertions,
+		AutoFixture e NSubstitute para garantir que o código esteja funcionando como esperado.
+	</div>
+</div>
+
+<div>
+</div>
+
+@code {
+
+}
+
 
 @code {
 

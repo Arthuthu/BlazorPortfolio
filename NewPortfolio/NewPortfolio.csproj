@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\Images\Roadmaps\Index.png" />
-    <None Include="wwwroot\Images\Roadmaps\Login.png" />
+    <None Include="wwwroot\Images\Roadmaps\1.png" />
+    <None Include="wwwroot\Images\Roadmaps\2.png" />
   </ItemGroup>
 
 </Project>
