@@ -1,7 +1,5 @@
 ﻿@page "/projects/roadmaps"
 
-@page "/projects/roadmaps"
-
 <div class="section-title">
 	Roadmaps
 </div>
@@ -28,14 +26,44 @@
 	</div>
 </div>
 
-<div>
+<div class="project-images-div">
+	<img src="Images/Roadmaps/@imagePath" class="project-page-picture" />
 </div>
 
+<div class="project-roller-buttons-div">
+	<div>
+		<button src="Images/ProjectPageIcons/LeftArrow.png" class="arrow-button" @onclick=DecrementImage/>
+	</div>
+	<div>
+		<button src="Images/ProjectPageIcons/RightArrow.png" class="arrow-button" @onclick=IncrementImage />
+	</div>
+</div>
+
+
 @code {
+	private static int image = 1;
+	private static string imagePath = $"{image.ToString()}.png";
+	private int roadmapPicturesNumbers = 2;
 
-}
+	private void IncrementImage()
+	{
+		if (image >= roadmapPicturesNumbers)
+		{
+			return;
+		}
 
+		image++;
+		imagePath = $"{image.ToString()}.png";
+	}
 
-@code {
+	private void DecrementImage()
+	{
+		if (image <= 1)
+		{
+			return;
+		}
 
+		image--;
+		imagePath = $"{image.ToString()}.png";
+	}
 }
