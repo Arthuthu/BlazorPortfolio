@@ -199,3 +199,65 @@ html, body {
         transition: 500ms;
         color: #FF33C1;
     }
+
+
+/* Mobile */
+
+@media all and (max-width: 1280px){
+
+    .icons-div {
+        flex-direction: column;
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .other-categories-div {
+        flex-direction: column;
+    }
+
+    .competencias-eng {
+        text-align: center;
+    }
+
+    .section-div {
+        border-radius: 0;
+    }
+
+    .projects-div {
+        flex-direction: column;
+    }
+
+    .index-project-picture {
+        width: 320px;
+        height: 180px;
+    }
+
+    .contato-div {
+        flex-direction: column;
+    }
+
+    .contato-info-div {
+        justify-content: center;
+    }
+
+    #email-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #email-section-title {
+        text-align: center;
+    }
+
+    #email-icon {
+        margin-top: 20px;
+    }
+
+    /*Project page*/
+
+    .project-page-picture {
+        width: 350px;
+        height: 210px;
+    }
+}
