@@ -1,7 +1,69 @@
 ﻿@page "/projects/oldportfolio"
 
-<h3>OldPortfolio</h3>
+<div class="section-title">
+	Antigo Portfolio
+</div>
+
+<div class="info-description">
+	<div class="info-paragraph">
+		Roadmaps é um site desenvolvidor em Blazor que utiliza uma API que traz informações do banco de dados.
+	</div>
+</div>
+
+<div class="project-images-div">
+	<img src="Images/Clinica/@imagePath" class="project-page-picture" />
+</div>
+
+<div class="project-roller-buttons-div">
+	<div>
+		<button class="portfolio-button" @onclick=DecrementImage> Anterior </button>
+	</div>
+	<div class="fw-bold fs-2">
+		@image / @lastImage
+	</div>
+	<div>
+		<button class="portfolio-button" @onclick=IncrementImage> Proximo </button>
+	</div>
+</div>
+
+<div class="text-center mb-5">
+	<a href="https://github.com/Arthuthu/PortfolioSite" class="project-github-link">
+		Github
+	</a>
+</div>
+
+<div class="text-center my-5">
+	<a href="/" class="portfolio-button-anchor">Voltar</a>
+</div>
 
 @code {
+	private static int image = 1;
+	private static string imagePath = $"{image.ToString()}.png";
+	private int lastImage = 2;
 
+	private void IncrementImage()
+	{
+		if (image == lastImage)
+		{
+			image = 1;
+			imagePath = $"{image.ToString()}.png";
+			return;
+		}
+
+		image++;
+		imagePath = $"{image.ToString()}.png";
+	}
+
+	private void DecrementImage()
+	{
+		if (image == 1)
+		{
+			image = lastImage;
+			imagePath = $"{image.ToString()}.png";
+			return;
+		}
+
+		image--;
+		imagePath = $"{image.ToString()}.png";
+	}
 }

@@ -11,7 +11,7 @@
 <div class="info-description">
 	<div class="info-paragraph">
 		Olá, meu nome é @info.Name. Com @info.Age anos,
-		sou um desenvolvedor FullStack, Engenheiro da Computação, apaixonado por transformar ideias em realidade.
+		sou um desenvolvedor FullStack, Engenheiro da Computação.
 		Minha jornada na área de desenvolvimento começou há alguns anos,
 		e desde então tenho mergulhado de cabeça em diversos projetos.
 
@@ -94,6 +94,7 @@
 			<ul>
 				<li>Rest API</li>
 				<li>UnitTests</li>
+				<li>Dependency Injection</li>
 				<li>Logging</li>
 				<li>SOLID</li>
 				<li>KISS</li>
@@ -157,58 +158,6 @@
 	</div>
 </div>
 
-<div class="section-title" id="contact-section">
-	Contato
-</div>
-<div class="contato-div">
-	<div>
-		<div class="contato-info-div">
-			<div>
-				<img class="contact-icon" alt="whatsapp-icon" src="@linkIconeWhatsapp" />
-			</div>
-			<div class="d-flex justify-content-evenly">
-				<div class="contact-section-title">
-					Whatsapp:
-				</div>
-				<div>
-					@info.Number
-				</div>
-			</div>
-		</div>
-		<div class="contato-info-div">
-			<div>
-				<img class="contact-icon" alt="github-icon" src="@linkIconeGithub" />
-			</div>
-			<a href="@info.GithubLink" class="link">
-				Github
-			</a>
-		</div>
-	</div>
-	<div>
-		<div class="contato-info-div">
-			<div>
-				<img class="contact-icon" alt="email-icon" src="@linkIconeEmail" />
-			</div>
-			<div class="d-flex justify-content-evenly">
-				<div class="contact-section-title">
-					Email: 
-				</div>
-				<div>
-					@info.Email
-				</div>
-			</div>
-		</div>
-		<div class="contato-info-div">
-			<div>
-				<img class="contact-icon" alt="linkedin-icon" src="@linkIconeLinkedin" />
-			</div>
-			<a href="@info.LinkedinLink" class="link">
-				Linkedin
-			</a>
-		</div>
-	</div>
-</div>
-
 @code 
 {
 	Info info = new Info();
@@ -221,9 +170,4 @@
 	private const string linkIconeCss = "https://cdn-icons-png.flaticon.com/512/919/919826.png";
 	private const string linkIconeDocker = "https://cdn-icons-png.flaticon.com/512/5969/5969059.png";
 	private const string linkIconeBlazor = "https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/16/2019/04/BrandBlazor_nohalo_1000x.png";
-
-	private const string linkIconeWhatsapp = "https://cdn-icons-png.flaticon.com/512/1384/1384023.png";
-	private const string linkIconeGithub = "https://cdn-icons-png.flaticon.com/512/25/25231.png";
-	private const string linkIconeEmail = "https://cdn-icons-png.flaticon.com/512/542/542638.png";
-	private const string linkIconeLinkedin = "https://cdn-icons-png.flaticon.com/512/1384/1384014.png";
 }

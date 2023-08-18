@@ -1,4 +1,5 @@
-﻿@inherits LayoutComponentBase
+﻿@using NewPortfolio.Data.Profile;
+@inherits LayoutComponentBase
 
 <PageTitle>Arthur Portfolio</PageTitle>
 
@@ -8,4 +9,64 @@
             @Body
         </div>
     </main>
+	<div class="section-title" id="contact-section">
+		Contato
+	</div>
+	<div class="contato-div">
+		<div>
+			<div class="contato-info-div">
+				<div>
+					<img class="contact-icon" alt="whatsapp-icon" src="@linkIconeWhatsapp" />
+				</div>
+				<div class="d-flex justify-content-evenly">
+					<div class="contact-section-title">
+						Whatsapp:
+					</div>
+					<div>
+						@info.Number
+					</div>
+				</div>
+			</div>
+			<div class="contato-info-div">
+				<div>
+					<img class="contact-icon" alt="github-icon" src="@linkIconeGithub" />
+				</div>
+				<a href="@info.GithubLink" class="link">
+					Github
+				</a>
+			</div>
+		</div>
+		<div>
+			<div class="contato-info-div">
+				<div>
+					<img class="contact-icon" alt="email-icon" src="@linkIconeEmail" />
+				</div>
+				<div class="d-flex justify-content-evenly">
+					<div class="contact-section-title">
+						Email:
+					</div>
+					<div>
+						@info.Email
+					</div>
+				</div>
+			</div>
+			<div class="contato-info-div">
+				<div>
+					<img class="contact-icon" alt="linkedin-icon" src="@linkIconeLinkedin" />
+				</div>
+				<a href="@info.LinkedinLink" class="link">
+					Linkedin
+				</a>
+			</div>
+		</div>
+	</div>
 </div>
+
+@code {
+	Info info = new Info();
+
+	private const string linkIconeWhatsapp = "https://cdn-icons-png.flaticon.com/512/1384/1384023.png";
+	private const string linkIconeGithub = "https://cdn-icons-png.flaticon.com/512/25/25231.png";
+	private const string linkIconeEmail = "https://cdn-icons-png.flaticon.com/512/542/542638.png";
+	private const string linkIconeLinkedin = "https://cdn-icons-png.flaticon.com/512/1384/1384014.png";
+}

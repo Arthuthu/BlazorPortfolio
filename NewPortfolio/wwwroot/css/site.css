@@ -165,7 +165,7 @@ html, body {
     align-items: center;
 }
 
-.slide-button {
+.portfolio-button, .portfolio-button-anchor {
     height: 100px;
     width: 150px;
     margin: 40px 0;
@@ -174,11 +174,28 @@ html, body {
     border: 6px solid #8F01B9;
     border-radius: 10px;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-    .slide-button:hover {
+    .portfolio-button:hover, .portfolio-button-anchor:hover {
         transition: 500ms;
         color: #8F01B9;
         background-color: #FFF;
+    }
+
+.portfolio-button-anchor {
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+.project-github-link {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+    .project-github-link:hover {
+        transition: 500ms;
+        color: #FF33C1;
     }

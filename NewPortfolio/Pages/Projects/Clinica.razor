@@ -1,5 +1,76 @@
 ﻿@page "/projects/clinica"
 
-@code {
+<div class="section-title">
+	Clinica
+</div>
 
+<div class="info-description">
+	<div class="info-paragraph">
+		Este projeto foi criado para atender necessidade de clinicas, onde é feito um cadastro da clinica
+		pelo website. Apos o cadastro da clinica é possivel cadastrar e agendar consultas para pacientes.
+	</div>
+	<div class="info-paragraph">
+		A parte FrontEnd foi desenvolvido utilizando HTML5, CSS3, Bootstrap5 e Blazor.
+
+		Ja o BackEnd foi desenvolvido utilizando uma Rest API (.NetCore), duas bibliotecas que realizam
+		a regra de negócio e buscam informações no banco de dados (SQL Server).
+	</div>
+</div>
+
+<div class="project-images-div">
+	<img src="Images/Clinica/@imagePath" class="project-page-picture" />
+</div>
+
+<div class="project-roller-buttons-div">
+	<div>
+		<button class="portfolio-button" @onclick=DecrementImage> Anterior </button>
+	</div>
+	<div class="fw-bold fs-2">
+		@image / @lastImage
+	</div>
+	<div>
+		<button class="portfolio-button" @onclick=IncrementImage> Proximo </button>
+	</div>
+</div>
+
+<div class="text-center mb-5">
+	<a href="https://github.com/Arthuthu/ClinicaApp" class="project-github-link">
+		Github
+	</a>
+</div>
+
+<div class="text-center my-5">
+	<a href="/" class="portfolio-button-anchor">Voltar</a>
+</div>
+
+@code {
+	private static int image = 1;
+	private static string imagePath = $"{image.ToString()}.png";
+	private int lastImage = 14;
+
+	private void IncrementImage()
+	{
+		if (image == lastImage)
+		{
+			image = 1;
+			imagePath = $"{image.ToString()}.png";
+			return;
+		}
+
+		image++;
+		imagePath = $"{image.ToString()}.png";
+	}
+
+	private void DecrementImage()
+	{
+		if (image == 1)
+		{
+			image = lastImage;
+			imagePath = $"{image.ToString()}.png";
+			return;
+		}
+
+		image--;
+		imagePath = $"{image.ToString()}.png";
+	}
 }
