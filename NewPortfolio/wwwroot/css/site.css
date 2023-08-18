@@ -81,7 +81,7 @@ html, body {
 }
 
 #section-id {
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .lists-div > ul {
@@ -204,6 +204,10 @@ html, body {
 /* Mobile */
 
 @media all and (max-width: 1280px){
+
+    .info-description {
+        width: 95%;
+    }
 
     .icons-div {
         flex-direction: column;
