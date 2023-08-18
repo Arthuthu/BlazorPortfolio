@@ -6,23 +6,26 @@
 
 <div class="info-description">
 	<div class="info-paragraph">
-		Roadmaps é um site desenvolvidor em Blazor que utiliza uma API que traz informações do banco de dados.
+		Roadmaps é um site desenvolvido em Blazor que se integra de forma eficiente com uma API,
+		permitindo a obtenção de informações cruciais a partir de um banco de dados robusto.
+		O coração do sistema é o backend construído em C#,
+		que emprega uma REST API e duas bibliotecas especializadas para gerir a lógica de negócios,
+		enquanto realiza buscas otimizadas utilizando o ORM Dapper.
+		O armazenamento confiável é garantido por meio do SQL Server,
+		onde tabelas bem definidas e stored procedures foram implementadas para executar comandos e consultas de maneira eficaz.
 	</div>
 	<div class="info-paragraph">
-		O back-end foi desenvolvido em C#, utilizando uma REST Api, 2 bibliotecas que realizam a regra de
-		negócio e fazendo a busca das informações com o ORM Dapper.
+		Durante o desenvolvimento,
+		também foi adotada uma abordagem defensiva com o uso de bibliotecas como FluentValidation,
+		assegurando que todos os dados sejam válidos antes de serem processados.
+		Além disso, a implementação de logs foi incorporada ao sistema,
+		permitindo o registro de informações relevantes para uma análise mais aprofundada em caso de ocorrência de erros inesperados.
 	</div>
 	<div class="info-paragraph">
-		O banco de dados utilizado é o SQL Server, onde foi criado as tabelas e stored procedures
-		para executar os commands e querys no banco.
-	</div>
-	<div class="info-paragraph">
-		Também foi utilizado bibliotecas como FluentValidation para garantir que os dados contenham
-		informações válidas, Logging para guardar informações caso ocorra erros inesperados com o código.
-	</div>
-	<div class="info-paragraph">
-		Foi desenvolvido também um projeto de testes que utiliza a biblioteca XUnit junto com FluentAssertions,
-		AutoFixture e NSubstitute para garantir que o código esteja funcionando como esperado.
+		Para garantir a integridade do código, foi elaborado um projeto de testes abrangente,
+		apoiado pela biblioteca XUnit.
+		A combinação de FluentAssertions, AutoFixture e NSubstitute contribui para a validação contínua do funcionamento esperado do código,
+		reforçando a confiabilidade do sistema como um todo.
 	</div>
 </div>
 
@@ -55,7 +58,7 @@
 @code {
 	private static int image = 1;
 	private static string imagePath = $"{image.ToString()}.png";
-	private int lastImage = 2;
+	private int lastImage = 12;
 
 	private void IncrementImage()
 	{
