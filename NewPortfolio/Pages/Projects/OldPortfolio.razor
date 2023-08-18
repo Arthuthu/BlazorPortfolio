@@ -6,12 +6,26 @@
 
 <div class="info-description">
 	<div class="info-paragraph">
-		Roadmaps é um site desenvolvidor em Blazor que utiliza uma API que traz informações do banco de dados.
+		Este projeto marca o início da minha jornada em compartilhar e exibir meus primeiros projetos.
+		Criado com entusiasmo, ele serviu como meu ponto de partida para destacar conquistas passadas.
+	</div>
+	<div class="info-paragraph">
+		Diferente dos projetos subsequentes, esta versão inicial não apresenta uma camada backend, concentrando-se principalmente na experiência do usuário.
+		As tecnologias empregadas são HTML5, CSS3 e Razor Pages,
+		proporcionando uma interface simples, porém eficaz.
+	</div>
+	<div class="info-paragraph">
+		Os projetos apresentados nesse portfólio inaugural refletem meu ponto de partida na área, caracterizando-se por sua simplicidade e escala comparativamente menor. Eles representam um capítulo inicial na minha jornada de desenvolvimento,
+		contrastando significativamente com os projetos robustos e abrangentes que compõem meu portfólio atual.
+	</div>
+	<div class="info-paragraph">
+		Embora modestos em comparação, esses primeiros projetos são fundamentais para compreender o progresso que alcancei desde então.
+		Cada projeto é uma lembrança das minhas conquistas e do meu crescimento contínuo como desenvolvedor.
 	</div>
 </div>
 
 <div class="project-images-div">
-	<img src="Images/Clinica/@imagePath" class="project-page-picture" />
+	<img src="Images/OldPortfolio/@imagePath" class="project-page-picture" />
 </div>
 
 <div class="project-roller-buttons-div">
@@ -39,7 +53,7 @@
 @code {
 	private static int image = 1;
 	private static string imagePath = $"{image.ToString()}.png";
-	private int lastImage = 2;
+	private int lastImage = 5;
 
 	private void IncrementImage()
 	{
