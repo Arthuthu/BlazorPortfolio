@@ -1,9 +1,16 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+:root {
+    --dark-purple: #31004D;
+    --light-purple: #5E0492;
+    --pink: #8F01B9;
+    --dark-blue: #0D1130;
+    --light-pink: #FF33C1;
+}
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background-image: linear-gradient(#31004D, #5E0492);
+    background-image: linear-gradient(var(--dark-purple), var(--dark-blue));
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -18,7 +25,8 @@ html, body {
     height: 300px;
     width: 300px;
     border-radius: 10px;
-    border: 6px solid #8F01B9;
+    border: 6px solid var(--pink);
+    border-radius: 50%;
 }
 
 .info-description {
@@ -29,7 +37,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid #8F01B9;
+    border: 3px solid var(--pink);
     border-radius: 10px;
     font-size: 20px;
 }
@@ -43,7 +51,7 @@ html, body {
     justify-content: space-evenly;
     background-color: #FFF;
     border-radius: 10px;
-    border: 6px solid #8F01B9;
+    border: 6px solid var(--pink);
     margin: 0 30rem;
     padding: 5px 0;
 }
@@ -61,7 +69,7 @@ html, body {
 
 .section-div {
     padding: 0;
-    border: 6px solid #8F01B9;
+    border: 6px solid var(--pink);
     border-radius: 10px;
     padding-bottom: 20px;
 }
@@ -89,8 +97,16 @@ html, body {
     margin: 0;
 }
 
+.competencias {
+    background-color: #FFF;
+    color: var(--dark-purple);
+    font-weight: bold;
+    padding: 40px;
+}
+
 .competencias-list-div {
     margin-bottom: 20px;
+    font-size: 200px;    
 }
 
 .projects-div {
@@ -105,7 +121,7 @@ html, body {
 }
 
 #contact-section {
-    border-top: 5px solid #8F01B9;
+    border-top: 5px solid var(--dark-purple);
     border-radius: 5px;
 }
 
@@ -171,7 +187,7 @@ html, body {
     margin: 40px 0;
     color: white;
     background-color: transparent;
-    border: 6px solid #8F01B9;
+    border: 6px solid var(--pink);
     border-radius: 10px;
     font-weight: bold;
     font-size: 25px;
@@ -179,7 +195,7 @@ html, body {
 
     .portfolio-button:hover, .portfolio-button-anchor:hover {
         transition: 500ms;
-        color: #8F01B9;
+        color: var(--pink);
         background-color: #FFF;
     }
 
@@ -197,7 +213,7 @@ html, body {
 
     .project-github-link:hover {
         transition: 500ms;
-        color: #FF33C1;
+        color: var(--light-pink);
     }
 
 
